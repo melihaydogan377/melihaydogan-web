@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melih Aydoğan | Date Randevu Formu ☕✨</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-4 sm:p-6">
+
+    <div class="max-w-md w-full bg-slate-900/80 border border-slate-800 rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-2xl space-y-6">
+        
+        <!-- Header -->
+        <div class="text-center space-y-2">
+            <span class="px-3 py-1 bg-pink-500/10 border border-pink-500/20 text-pink-400 text-xs font-bold rounded-full uppercase tracking-wider">
+                VIP Date Application ✨
+            </span>
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-white">Date Randevusu Al</h1>
+            <p class="text-xs sm:text-sm text-slate-400">
+                Uygunluk durumunu kontrol edip sana dönüş yapabilmem için formu doldurman yeterli! 😉
+            </p>
+        </div>
+
+        <!-- Form -->
+        <form id="dateForm" class="space-y-4">
+            
+            <!-- İsim -->
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Adın / Soyadın</label>
+                <input type="text" id="name" required placeholder="Örn: Ayşe" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 transition text-sm">
+            </div>
+
+            <!-- Instagram / İletişim -->
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Instagram Kullanıcı Adın</label>
+                <input type="text" id="instagram" required placeholder="@kullaniciadi" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 transition text-sm">
+            </div>
+
+            <!-- Date Konsepti -->
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Nasıl Bir Date Olsun?</label>
+                <select id="concept" class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-pink-500 transition text-sm">
+                    <option value="Sakin bir kahve & derin sohbet ☕">Sakin bir kahve & derin sohbet ☕</option>
+                    <option value="Şık bir akşam yemeği 🍷">Şık bir akşam yemeği 🍷</option>
+                    <option value="Yürüyüş & Tatlı / Dondurma 🍦">Yürüyüş & Tatlı / Dondurma 🍦</option>
+                    <option value="Aksiyon / Tenis / Aktivite 🎾">Aksiyon / Tenis / Aktivite 🎾</option>
+                </select>
+            </div>
+
+            <!-- Tarih & Saat -->
+            <div class="grid grid-cols-2 gap-3">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Hangi Gün?</label>
+                    <input type="date" id="date" required class="w-full px-3 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-pink-500 transition text-xs">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Saat Kaç Gibi?</label>
+                    <input type="time" id="time" required class="w-full px-3 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white focus:outline-none focus:border-pink-500 transition text-xs">
+                </div>
+            </div>
+
+            <!-- Neden Ben / Not -->
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1">Eklemek İstediğin Bir Not? (Opsiyonel)</label>
+                <textarea id="note" rows="2" placeholder="Sohbet konusu önerisi, sevdiğin bir mekan vs..." class="w-full px-4 py-3 rounded-xl bg-slate-950 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-pink-500 transition text-sm resize-none"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="w-full py-3.5 bg-gradient-to-r from-pink-500 to-indigo-600 hover:from-pink-600 hover:to-indigo-700 text-white font-bold rounded-xl shadow-lg shadow-pink-500/20 transition flex items-center justify-center gap-2 text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i> Randevu İsteğini Gönder
+            </button>
+        </form>
+
+        <div class="text-center">
+            <a href="/" class="text-xs text-slate-500 hover:text-slate-400 transition">← Ana Sayfaya Dön</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('dateForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // BURAYA KENDİ TELEFON NUMARANI YAZ (Örn: 905350165608)
+            const myPhoneNumber = "PHONE_NUMBER_HERE"; 
+
+            const name = document.getElementById('name').value;
+            const instagram = document.getElementById('instagram').value;
+            const concept = document.getElementById('concept').value;
+            const date = document.getElementById('date').value;
+            const time = document.getElementById('time').value;
+            const note = document.getElementById('note').value;
+
+            let text = `Selam Melih! Siteden bir date randevusu oluşturuldu 🚀%0A%0A`;
+            text += `👤 *İsim:* ${name}%0A`;
+            text += `📸 *Instagram:* ${instagram}%0A`;
+            text += `✨ *Konsept:* ${concept}%0A`;
+            text += `📅 *Tarih:* ${date} - ${time}%0A`;
+            if(note) text += `💬 *Not:* ${note}%0A`;
+
+            window.open(`https://wa.me/${myPhoneNumber}?text=${text}`, '_blank');
+        });
+    </script>
+</body>
+</html>
