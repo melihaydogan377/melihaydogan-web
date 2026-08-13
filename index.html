@@ -1,15 +1,118 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="tr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melih Aydoğan</title>
+    <title>Melih Aydoğan | Portföy & Dijital Pazarlama</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center p-6">
-    <div class="max-w-xl text-center space-y-4">
-        <h1 class="text-4xl font-bold text-white">Melih Aydoğan</h1>
-        <p class="text-slate-400">Yakında burada...</p>
-    </div>
+<body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-indigo-400 transition">
+                Melih<span class="text-indigo-500">.</span>
+            </a>
+            <div class="flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#hakkimda" class="hover:text-white transition">Hakkımda</a>
+                <a href="#uzmanlik" class="hover:text-white transition">Uzmanlıklar</a>
+                <a href="#iletisim" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition font-semibold">İletişim</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6">
+            <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
+            Uluslararası Ticaret & Dijital Strateji
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+            Veri odaklı dijital pazarlama, e-ticaret ve <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">lojistik operasyonları.</span>
+        </h1>
+        
+        <p class="mt-6 text-lg text-slate-400 max-w-2xl leading-relaxed">
+            Merhaba, ben <strong class="text-slate-200">Melih Aydoğan</strong>. Bursa Teknik Üniversitesi Uluslararası Ticaret ve Lojistik öğrencisiyim. Dijital pazarlama, e-ticaret entegrasyonları, influencer partnerlikleri ve topluluk yönetimi alanlarında proaktif çözümler üretiyorum.
+        </p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#iletisim" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-semibold shadow-lg shadow-indigo-600/20 transition flex items-center gap-2">
+                <i class="fa-regular fa-paper-plane"></i> İletişime Geç
+            </a>
+            <a href="https://github.com/kullanici-adin" target="_blank" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 rounded-xl font-semibold transition flex items-center gap-2">
+                <i class="fa-brands fa-github text-lg"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/kullanici-adin" target="_blank" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 rounded-xl font-semibold transition flex items-center gap-2">
+                <i class="fa-brands fa-linkedin text-lg text-blue-400"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <!-- Uzmanlık Alanları / Kartlar -->
+    <section id="uzmanlik" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-900">
+        <h2 class="text-2xl font-bold text-white mb-8">Neler Yapıyorum?</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Kart 1 -->
+            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl hover:border-indigo-500/40 transition">
+                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Dış Ticaret & Lojistik</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Gümrükleme, proforma fatura süreçleri, mikro ihracat ve uluslararası tedarik zinciri operasyonlarının takibi.
+                </p>
+            </div>
+
+            <!-- Kart 2 -->
+            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl hover:border-indigo-500/40 transition">
+                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Dijital Pazarlama & PR</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Influencer pazarlama kampanyaları, pazar yeri entegrasyonları, affiliate yönlendirme ağları ve içerik stratejisi.
+                </p>
+            </div>
+
+            <!-- Kart 3 -->
+            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl hover:border-indigo-500/40 transition">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                    <i class="fa-solid fa-code-branch"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Veri Otomasyonu & Web</h3>
+                <p class="text-sm text-slate-400 leading-relaxed">
+                    Excel/Python veri temizleme, içerik otomasyon sistemleri ve modern web araçlarıyla dijital varlık yönetimi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim / Footer -->
+    <footer id="iletisim" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-900 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">Bir Projen mi Var?</h2>
+        <p class="text-slate-400 mb-8 max-w-lg mx-auto">
+            Yeni fırsatlar, iş birlikleri veya projeler hakkında konuşmak için dilediğin zaman ulaşabilirsin.
+        </p>
+        
+        <a href="mailto:iletisim@melihaydogan.com.tr" class="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold transition shadow-lg shadow-indigo-600/25">
+            <i class="fa-regular fa-envelope text-lg"></i> E-posta Gönder
+        </a>
+
+        <div class="mt-16 text-slate-600 text-sm">
+            © 2026 Melih Aydoğan. Tüm hakları saklıdır.
+        </div>
+    </footer>
+
 </body>
 </html>
