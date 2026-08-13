@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Melih Aydoğan | Portföy & Dijital Pazarlama</title>
-    <!-- Tailwind CSS CDN -->
+    <title>Melih Aydoğan | Curriculum Vitae</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts: Plus Jakarta Sans -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -16,103 +16,270 @@
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-indigo-500 selection:text-white">
 
-    <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
+    <!-- Header / Sticky Nav -->
+    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800/80">
         <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
             <a href="#" class="text-xl font-bold tracking-tight text-white hover:text-indigo-400 transition">
-                Melih<span class="text-indigo-500">.</span>
+                Melih AYDOĞAN<span class="text-indigo-500">.</span>
             </a>
-            <div class="flex items-center space-x-6 text-sm font-medium text-slate-300">
-                <a href="#hakkimda" class="hover:text-white transition">Hakkımda</a>
-                <a href="#uzmanlik" class="hover:text-white transition">Uzmanlıklar</a>
+            <div class="hidden md:flex items-center space-x-6 text-sm font-medium text-slate-300">
+                <a href="#ozet" class="hover:text-white transition">Hakkımda</a>
+                <a href="#deneyim" class="hover:text-white transition">Deneyim</a>
+                <a href="#egitim" class="hover:text-white transition">Eğitim</a>
+                <a href="#yetenekler" class="hover:text-white transition">Yetenekler & Sertifikalar</a>
                 <a href="#iletisim" class="px-4 py-2 bg-indigo-600 hover:bg-indigo-500 text-white rounded-lg transition font-semibold">İletişim</a>
             </div>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-6 max-w-5xl mx-auto">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold mb-6">
-            <span class="w-2 h-2 rounded-full bg-indigo-400 animate-pulse"></span>
-            Uluslararası Ticaret & Dijital Strateji
-        </div>
-        
-        <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
-            Veri odaklı dijital pazarlama, e-ticaret ve <span class="bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">lojistik operasyonları.</span>
-        </h1>
-        
-        <p class="mt-6 text-lg text-slate-400 max-w-2xl leading-relaxed">
-            Merhaba, ben <strong class="text-slate-200">Melih Aydoğan</strong>. Bursa Teknik Üniversitesi Uluslararası Ticaret ve Lojistik öğrencisiyim. Dijital pazarlama, e-ticaret entegrasyonları, influencer partnerlikleri ve topluluk yönetimi alanlarında proaktif çözümler üretiyorum.
-        </p>
+    <!-- Main Content Wrapper -->
+    <main class="pt-28 pb-20 max-w-5xl mx-auto px-6 space-y-16">
 
-        <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#iletisim" class="px-6 py-3 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-semibold shadow-lg shadow-indigo-600/20 transition flex items-center gap-2">
-                <i class="fa-regular fa-paper-plane"></i> İletişime Geç
-            </a>
-            <a href="https://github.com/kullanici-adin" target="_blank" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 rounded-xl font-semibold transition flex items-center gap-2">
-                <i class="fa-brands fa-github text-lg"></i> GitHub
-            </a>
-            <a href="https://linkedin.com/in/kullanici-adin" target="_blank" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 rounded-xl font-semibold transition flex items-center gap-2">
-                <i class="fa-brands fa-linkedin text-lg text-blue-400"></i> LinkedIn
-            </a>
-        </div>
-    </section>
+        <!-- Hero Section -->
+        <section id="ozet" class="space-y-6">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold">
+                <i class="fa-solid fa-location-dot"></i> Bursa, Türkiye
+            </div>
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                Melih AYDOĞAN
+            </h1>
+            
+            <p class="text-lg sm:text-xl font-medium text-indigo-400">
+                International Trade and Logistics | Social Media Specialist | Chairman of Uluslararası Ticaret A.T. | Aspire Leaders'26
+            </p>
 
-    <!-- Uzmanlık Alanları / Kartlar -->
-    <section id="uzmanlik" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-900">
-        <h2 class="text-2xl font-bold text-white mb-8">Neler Yapıyorum?</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Kart 1 -->
-            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl hover:border-indigo-500/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-4">
-                    <i class="fa-solid fa-globe"></i>
-                </div>
-                <h3 class="text-lg font-bold text-white mb-2">Dış Ticaret & Lojistik</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Gümrükleme, proforma fatura süreçleri, mikro ihracat ve uluslararası tedarik zinciri operasyonlarının takibi.
+            <!-- Özet Metni -->
+            <div class="p-6 sm:p-8 bg-slate-900/60 border border-slate-800/80 rounded-2xl backdrop-blur-sm text-slate-300 leading-relaxed text-base sm:text-lg space-y-4">
+                <p>
+                    Uluslararası ticaret, e-ticaret stratejileri ve dijital iletişimin kesişim noktasında; teoriyi sahada uygulamaya, vizyonu ise somut çıktılara dönüştürüyorum. Liderliğini üstlendiğim topluluklar ve aktif rol aldığım çeşitli sivil toplum mecralarında; akademi ile reel sektörü buluşturan zirvelere, organizasyonlara ve stratejik projelere yön veriyorum.
+                </p>
+                <p>
+                    Staj ve projelerimle pekiştirdiğim saha pratiklerim, dönüşüm odaklı etkileşim mimarileri ve kurumsal iletişim tecrübem sayesinde; pazarın nabzını tutma ve stratejik veri okuma yetimi sürekli keskinleştiriyorum. Analitik derinliğimi, insan ilişkilerindeki esneklik ve ikna kabiliyetimle sentezleyerek; Uluslararası ticaret dinamiklerinde fark yaratan, ezber bozan ve sürdürülebilir değerler inşa etmeyi hedefliyorum.
                 </p>
             </div>
 
-            <!-- Kart 2 -->
-            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl hover:border-indigo-500/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-4">
-                    <i class="fa-solid fa-chart-line"></i>
+            <!-- Quick Links -->
+            <div class="flex flex-wrap gap-4 pt-2">
+                <a href="mailto:melihaydoganofficial@gmail.com" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-semibold transition flex items-center gap-2 text-sm">
+                    <i class="fa-regular fa-envelope"></i> E-posta Gönder
+                </a>
+                <a href="https://www.linkedin.com/in/melihaydoqan" target="_blank" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 rounded-xl font-semibold transition flex items-center gap-2 text-sm">
+                    <i class="fa-brands fa-linkedin text-blue-400 text-base"></i> LinkedIn Profil
+                </a>
+                <a href="https://btuutat.com.tr" target="_blank" class="px-5 py-2.5 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-200 rounded-xl font-semibold transition flex items-center gap-2 text-sm">
+                    <i class="fa-solid fa-globe text-cyan-400"></i> btuutat.com.tr
+                </a>
+            </div>
+        </section>
+
+        <!-- Deneyim (Experience) Section -->
+        <section id="deneyim" class="space-y-8 pt-6 border-t border-slate-900">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-briefcase"></i>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">Dijital Pazarlama & PR</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Influencer pazarlama kampanyaları, pazar yeri entegrasyonları, affiliate yönlendirme ağları ve içerik stratejisi.
-                </p>
+                <h2 class="text-2xl font-bold text-white">Deneyim</h2>
             </div>
 
-            <!-- Kart 3 -->
-            <div class="p-6 bg-slate-900/50 border border-slate-800/80 rounded-2xl hover:border-indigo-500/40 transition">
-                <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
-                    <i class="fa-solid fa-code-branch"></i>
+            <div class="relative border-l-2 border-slate-800 ml-4 pl-6 space-y-10">
+                
+                <!-- Deneyim 1: Comio -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-xl font-bold text-white">Stajyer</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-indigo-400 w-fit">Temmuz 2026 - Present (2 ay)</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400 mt-1">Comio Dijital Pazarlama A.Ş. • Bursa, Türkiye</p>
                 </div>
-                <h3 class="text-lg font-bold text-white mb-2">Veri Otomasyonu & Web</h3>
-                <p class="text-sm text-slate-400 leading-relaxed">
-                    Excel/Python veri temizleme, içerik otomasyon sistemleri ve modern web araçlarıyla dijital varlık yönetimi.
-                </p>
+
+                <!-- Deneyim 2: BTÜ UTAT -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-indigo-500 transition ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-xl font-bold text-white">Yönetim Kurulu Başkanı</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-indigo-400 w-fit">Aralık 2025 - Present (9 ay)</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400 mt-1">BTÜ Uluslararası Ticaret Topluluğu • Bursa, Türkiye</p>
+                    <p class="text-sm text-slate-400 mt-3 leading-relaxed">
+                        Üniversite ile iş dünyası arasında sürdürülebilir bir köprü kurarak; teorik bilgiyi sektör profesyonellerinin tecrübeleriyle harmanlar ve üyelerimizin mesleki yetkinliklerini pratik deneyimlerle en üst seviyeye taşımayı amaçlar.
+                    </p>
+                </div>
+
+                <!-- Deneyim 3: Bursa Teknik Üniversitesi (Kurumsal İletişim / Kariyer) -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-indigo-500 transition ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-xl font-bold text-white">Bursa Teknik Üniversitesi</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-indigo-400 w-fit">3 yıl 10 ay</span>
+                    </div>
+                    
+                    <div class="mt-4 space-y-4 border-l border-slate-800 pl-4">
+                        <div>
+                            <h4 class="text-base font-semibold text-slate-200">Kurumsal İletişim Koordinatörlüğü</h4>
+                            <p class="text-xs text-slate-400">Ağustos 2025 - Present (1 yıl 1 ay) • Bursa, Türkiye</p>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-slate-200">Kariyer Gelişimi Uygulama ve Araştırma Merkezi</h4>
+                            <p class="text-xs text-slate-400">Ocak 2025 - Temmuz 2025 (7 ay) • Bursa, Türkiye</p>
+                        </div>
+                        <div>
+                            <h4 class="text-base font-semibold text-slate-200">Kurumsal İletişim Koordinatörlüğü</h4>
+                            <p class="text-xs text-slate-400">Kasım 2022 - Aralık 2024 (2 yıl 2 ay) • Bursa, Türkiye</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deneyim 4: NEFIX -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-indigo-500 transition ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-xl font-bold text-white">Foreign Trade Intern</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-indigo-400 w-fit">Temmuz 2025 - Ağustos 2025 (2 ay)</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400 mt-1">NEFIX • Bursa, Türkiye</p>
+                </div>
+
+                <!-- Deneyim 5: Trendyol Group -->
+                <div class="relative group">
+                    <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-700 group-hover:bg-indigo-500 transition ring-4 ring-slate-950"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                        <h3 class="text-xl font-bold text-white">Affiliate Marketing / Influencer</h3>
+                        <span class="text-xs font-semibold px-3 py-1 rounded-full bg-slate-800 text-indigo-400 w-fit">Ağustos 2022 - Temmuz 2024 (2 yıl)</span>
+                    </div>
+                    <p class="text-sm font-medium text-slate-400 mt-1">Trendyol Group</p>
+                    <ul class="list-disc list-inside text-sm text-slate-400 mt-3 space-y-1">
+                        <li>Managed influencer service processes aimed at product marketing and audience conversion.</li>
+                        <li>Negotiated directly with selected influencers to determine fees and content requirements.</li>
+                        <li>Drafted contract terms to maximize budget efficiency and operational performance.</li>
+                    </ul>
+                </div>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- İletişim / Footer -->
-    <footer id="iletisim" class="py-16 px-6 max-w-5xl mx-auto border-t border-slate-900 text-center">
-        <h2 class="text-3xl font-bold text-white mb-4">Bir Projen mi Var?</h2>
-        <p class="text-slate-400 mb-8 max-w-lg mx-auto">
-            Yeni fırsatlar, iş birlikleri veya projeler hakkında konuşmak için dilediğin zaman ulaşabilirsin.
-        </p>
-        
-        <a href="mailto:iletisim@melihaydogan.com.tr" class="inline-flex items-center gap-2 px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white rounded-xl font-bold transition shadow-lg shadow-indigo-600/25">
-            <i class="fa-regular fa-envelope text-lg"></i> E-posta Gönder
-        </a>
+        <!-- Eğitim (Education) Section -->
+        <section id="egitim" class="space-y-8 pt-6 border-t border-slate-900">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-lg">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <h2 class="text-2xl font-bold text-white">Eğitim</h2>
+            </div>
 
-        <div class="mt-16 text-slate-600 text-sm">
-            © 2026 Melih Aydoğan. Tüm hakları saklıdır.
-        </div>
-    </footer>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-2">
+                    <span class="text-xs font-semibold text-indigo-400">Ekim 2023 - Haziran 2027</span>
+                    <h3 class="text-lg font-bold text-white">Bursa Teknik Üniversitesi</h3>
+                    <p class="text-sm text-slate-300">Lisans Derecesi</p>
+                    <p class="text-xs text-slate-400">International Business / Trade / Commerce</p>
+                </div>
+
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-2">
+                    <span class="text-xs font-semibold text-indigo-400">Ekim 2024</span>
+                    <h3 class="text-lg font-bold text-white">Anadolu Üniversitesi</h3>
+                    <p class="text-sm text-slate-300">Önlisans</p>
+                    <p class="text-xs text-slate-400">Medya ve İletişim</p>
+                </div>
+
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-2">
+                    <span class="text-xs font-semibold text-indigo-400">Ekim 2022 - Nisan 2023</span>
+                    <h3 class="text-lg font-bold text-white">Bursa Teknik Üniversitesi</h3>
+                    <p class="text-sm text-slate-300">İngilizce Hazırlık Programı</p>
+                    <p class="text-xs text-slate-400">English Preparatory Program</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Yetenekler, Sertifikalar & Diller -->
+        <section id="yetenekler" class="space-y-8 pt-6 border-t border-slate-900">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Yetenekler & Diller -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Yetenekler & Diller</h2>
+                    </div>
+
+                    <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-6">
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">En Önemli Yetenekler</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-sm font-medium border border-slate-700">E-ticaret</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-sm font-medium border border-slate-700">Sosyal Medya Pazarlaması</span>
+                                <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-sm font-medium border border-slate-700">Liderlik</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-slate-800/80 pt-4">
+                            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Yabancı Diller</h3>
+                            <div class="space-y-2 text-sm">
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white font-medium">İngilizce</span>
+                                    <span class="text-xs text-slate-400">Limited Working</span>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <span class="text-white font-medium">Japonca</span>
+                                    <span class="text-xs text-slate-400">Elementary</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikalar & Yayınlar -->
+                <div class="space-y-6">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+                            <i class="fa-solid fa-certificate"></i>
+                        </div>
+                        <h2 class="text-2xl font-bold text-white">Sertifikalar & Yayınlar</h2>
+                    </div>
+
+                    <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-2xl space-y-4">
+                        <div>
+                            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Sertifikalar</h3>
+                            <ul class="space-y-2 text-sm text-slate-300">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-award text-indigo-400 text-xs"></i> Dijital Çağda Stratejik Düşünme Teknikleri</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-award text-indigo-400 text-xs"></i> İş Sağlığı ve Güvenliği</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-award text-indigo-400 text-xs"></i> Finansal Okuryazarlık</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-award text-indigo-400 text-xs"></i> Excel İleri Fonksiyonlar</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-award text-indigo-400 text-xs"></i> Diksiyon</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-slate-800/80 pt-4">
+                            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">Yayınlar</h3>
+                            <div class="flex items-center gap-2 text-sm text-white font-medium">
+                                <i class="fa-solid fa-newspaper text-cyan-400"></i> BTÜ Kariyer Bülteni
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer / Contact Bar -->
+        <footer id="iletisim" class="pt-12 border-t border-slate-900 text-center space-y-6">
+            <h2 class="text-2xl font-bold text-white">İletişime Geçin</h2>
+            <div class="flex justify-center gap-6 text-slate-400">
+                <a href="mailto:melihaydoganofficial@gmail.com" class="hover:text-indigo-400 transition text-lg"><i class="fa-regular fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/melihaydoqan" target="_blank" class="hover:text-indigo-400 transition text-lg"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://btuutat.com.tr" target="_blank" class="hover:text-indigo-400 transition text-lg"><i class="fa-solid fa-globe"></i></a>
+            </div>
+            <p class="text-xs text-slate-500">
+                © 2026 Melih AYDOĞAN. Tüm hakları saklıdır.
+            </p>
+        </footer>
+
+    </main>
 
 </body>
 </html>
